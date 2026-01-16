@@ -136,34 +136,78 @@ main {
   margin: 50px auto;
   text-align: center;
 }
-.sponspors-companys{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+.sponspors-companys {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
-.sponspors-companys img{
-    filter: grayscale(100%);
+.sponspors-companys img {
+  filter: grayscale(100%);
 }
-/* #features{
-    color: #FF900E;
-} */
-/* Header style */
 
-/* Main style */
-
+/* feature-section style started */
+.features {
+  gap: 146px;
+}
+#feature-section-title {
+  border-left: 5px solid #ff900e;
+  padding-left: 20px;
+}
+.feature-card .feature-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+.feature-card {
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+  gap: 20px;
+}
+#experience-badge {
+  padding: 46px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: -120px;
+}
+#experience-year {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.architect-image img {
+  width: 100%;
+}
 /* footer style */
+footer{
+    margin-top: 130px;
+}
+.footer-content {
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  background-color: #fff4e7;
+}
 
+footer p {
+  font-size: 1.25rem;
+  padding: 40px 0;
+}
 /* Rensponsive media query */
 @media screen and (max-width: 576px) {
   .navbar,
   .nav-links,
-  .display-flex {
+  .display-flex,
+  .features {
     flex-direction: column;
   }
   .team-img-container,
-  .fact-container, .sponspors-companys {
+  .fact-container,
+  .sponspors-companys {
     grid-template-columns: repeat(1, 1fr);
   }
-  .sponspors-companys{
+  .sponspors-companys {
     justify-items: center;
     gap: 50px;
   }
@@ -175,19 +219,29 @@ main {
     margin-left: 20px;
     text-align: center;
   }
+  #experience-badge {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
 }
 
 /* medium size rensponsive media query */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .teams {
+  .teams,
+  .features {
     flex-direction: column;
   }
   .our-features {
     margin: 50px auto;
   }
-  .sponspors-companys, .fact-container {
+  .sponspors-companys,
+  .fact-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
     justify-items: center;
+  }
+  #experience-badge {
+    margin-top: 20px;
+    margin-left: 20px;
   }
 }
